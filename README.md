@@ -20,3 +20,6 @@ This project provides the basic instructions to run the dosing.py script.
 
    >python dosing.py --viscode='w02' --svdose='Y' --ecsdstxt='180.0' --results=="results.csv"
    >python dosing.py --help
+
+4. Execute unit test 
+   >python -m unittest test_dosing.py
