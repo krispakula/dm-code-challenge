@@ -33,7 +33,7 @@ def merge_dataframes(df_ec, df_registry, rid='RID', viscode='VISCODE'):
 
 # Filter records
 def filter_records(df, viscode, svdose, ecsdstxt):
-   df_filtered = df[ df_merge.VISCODE == viscode ]
+   df_filtered = df[ df.VISCODE == viscode ]
    df_filtered = df_filtered[ df_filtered.SVDOSE == svdose ]
    df_filtered = df_filtered[ df_filtered.ECSDSTXT != ecsdstxt ]
    print(df_filtered)
